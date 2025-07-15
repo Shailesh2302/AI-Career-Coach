@@ -73,7 +73,7 @@ const OnboardingForm = ({ industries }) => {
     }
   }, [updateResult, updateLoading]);
 
-  const watchIndustry = watch("industry");
+        const watchIndustry = watch("industry");
 
   return (
     <div className="flex items-center justify-center bg-background">
