@@ -14,6 +14,7 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+
   return (
     <ClerkProvider
       appearance={{
@@ -28,6 +29,7 @@ export default function RootLayout({ children }) {
             enableSystem
             disableTransitionOnChange
           >
+        
             {/* header */}
             <Header />
 

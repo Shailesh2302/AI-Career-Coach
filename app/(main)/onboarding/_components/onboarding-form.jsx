@@ -28,7 +28,7 @@ import {
 } from "@/components/ui/select";
 import { onboardingSchema } from "@/app/lib/schema";
 import { updateUser } from "@/actions/user";
-import useFetch from "@/hook/use-fetch";
+import useFetch from "@/hooks/use-fetch";
 
 const OnboardingForm = ({ industries }) => {
   const router = useRouter();

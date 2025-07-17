@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Button } from "./ui/button";
 import {
@@ -84,9 +85,9 @@ export default async function Header() {
             </DropdownMenu>
           </SignedIn>
 
-          <SignedOut>
+          <SignedOut >
             <SignInButton>
-              <Button variant="outline">Sign In</Button>
+              <Button variant="outline" >Sign In</Button>
             </SignInButton>
           </SignedOut>
 

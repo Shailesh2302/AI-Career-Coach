@@ -23,6 +23,7 @@ import { faqs } from "@/data/faqs";
 import { howItWorks } from "@/data/howItWorks";
 
 export default function Home() {
+  
   return (
     <div>
       <div className="grid-background"></div>
