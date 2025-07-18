@@ -11,12 +11,17 @@ const nextConfig = {
   experimental: {
     serverComponentsExternalPackages: ['inngest']
   },
-  // Alternative: exclude the problematic route from static generation
-  async redirects() {
-    return []
+  // Removed the deprecated 'target' property
+  // Modern Next.js handles serverless deployment automatically
+  
+  webpack: (config, { isServer }) => {
+    if (isServer) {
+      // Handle Inngest as external to prevent bundling issues
+      config.externals = config.externals || [];
+      config.externals.push('inngest');
+    }
+    return config;
   },
-  // Ensure API routes are treated as serverless functions
-  target: 'serverless', 
 };
 
 export default nextConfig;
